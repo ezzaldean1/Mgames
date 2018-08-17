@@ -1,0 +1,15 @@
+{
+  "name": "mga.js",
+  "version": "2.1.0",
+  "description": "-- AWESOMENESS --",
+  "main": "mga.js",
+  "scripts": {
+    "start": "node mga.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  },
+  "engines": {
+    "node": "8.4.0"
+  }
+}
