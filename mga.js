@@ -5,7 +5,7 @@ client.on('ready', () => {
   console.log(' Gold Bot Is OnMusic')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity(" Nabarat Games",{type: 'PLAYING'})
+    client.user.setActivity(" Nabarat Server",{type: 'PLAYING'})
 });
 
 
