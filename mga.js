@@ -5,7 +5,7 @@ client.on('ready', () => {
   console.log(' Gold Bot Is OnMusic')
   console.log('---------------')
   client.user.setStatus("Online")
-    client.user.setActivity(" Marine Games",{type: 'PLAYING'})
+    client.user.setActivity(" Nabarat Games",{type: 'PLAYING'})
 });
 
 
@@ -313,7 +313,7 @@ const Za7f = [
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
    .setThumbnail(message.author.avatarURL) 
-   .addField('Marine Games' ,
+   .addField('Nabarat Games' ,
   `${Za7f[Math.floor(Math.random() * Za7f.length)]}`)
   message.channel.sendEmbed(embed);
   console.log('[38ab] Send By: ' + message.author.username)
@@ -550,6 +550,54 @@ const kingmas = [
    message.channel.sendEmbed(mariam);
    message.react(":thinking:")
   }
+});
+
+const adminprefix = "#";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+const devs = ['470500980342128650'];//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+  var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+    if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+    
+
+if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+
+  client.user.setGame(argresult);
+
+    message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
+
+} else 
+
+  if (message.content.startsWith(adminprefix + 'setname')) {
+
+client.user.setUsername(argresult).then
+
+    message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
+
+return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
+
+} else
+
+  if (message.content.startsWith(adminprefix + 'setavatar')) {
+
+client.user.setAvatar(argresult);
+
+  message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
+
+      } else     
+
+if (message.content.startsWith(adminprefix + 'setT')) {
+
+  client.user.setGame(argresult, "https://www.twitch.tv/idk");
+
+    message.channel.sendMessage(`**تم تغيير تويتش البوت إلى  ${argresult}**`)
+
+}
+
 });
 
 
